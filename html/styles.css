@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+/* CONFIG | Here you can edit the logo dimension. don't edit the other code if you don't know what you are doing*/
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+/* END CONFIG */
+
+body {
+    background: none !important;
+}
+
+#background {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#container {
+    user-select: none;
+    padding-top: 40vh;
+    padding-left: 3vh;
+    vertical-align: middle;
+    font-family: 'Oswald', sans-serif;
+}
+
+#container > * {
+    animation: fadein 1s;
+    margin-bottom: 10px;
+    width: fit-content;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 55px;
+}
+
+#container > h1:hover {
+    color: white;
+    animation: slide 0.5s;
+}
+
+.imgcont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes slide {
+	0% {
+		opacity: 0.0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1.0;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
